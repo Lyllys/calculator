@@ -1,6 +1,5 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution');
-
+require( '@rushstack/eslint-patch/modern-module-resolution' );
 module.exports = {
   root: true,
   'extends': [
@@ -19,5 +18,8 @@ module.exports = {
     quotes: ['error', 'single'],
     indent: ['error', 2],
     'vue/multi-word-component-names': 'off',
+    'no-var': 'error',
+    'object-curly-spacing': ['error', 'always'],
+    'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0 }]
   },
 };
